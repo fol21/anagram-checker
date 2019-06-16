@@ -1,0 +1,36 @@
+{
+  "name": "anagram-checker",
+  "version": "0.1.0",
+  "description": "Alogirthm for detecting if words are anagram",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./out/index.js",
+    "test": "ts-mocha -p ./tsconfig.json src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fol21/anagram-checker.git"
+  },
+  "keywords": [
+    "anagram",
+    "primenumbers",
+    "number",
+    "theory"
+  ],
+  "author": "Fernando Lima <folivelima@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fol21/anagram-checker/issues"
+  },
+  "homepage": "https://github.com/fol21/anagram-checker#readme",
+  "devDependencies": {
+    "@types/expect": "^1.20.4",
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.1.4",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "expect": "^24.8.0"
+  }
+}
