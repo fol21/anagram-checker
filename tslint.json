@@ -7,7 +7,8 @@
     "rules": {
         "one-line": false,
         "arrow-parens": false,
-        "no-bitwise": false
+        "no-bitwise": false,
+        "variable-name": false
     },
     "rulesDirectory": []
 }

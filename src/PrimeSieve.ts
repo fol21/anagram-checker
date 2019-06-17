@@ -24,8 +24,12 @@ export class PrimeSieve implements IPrimeSieve
         return primes.filter(p => p.isprime).map(p => p.value);
     }
 
-    public Check(n: number, iterations: number): boolean
+    public Check(n: number, iterations = 0): boolean
     {
+
+        if (iterations === 0) {
+            iterations = 2 * n + 1;
+        }
         if (n <= 1 || n === 4) {
             return false;
         }

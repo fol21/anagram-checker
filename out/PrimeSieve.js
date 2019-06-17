@@ -13,7 +13,10 @@ class PrimeSieve {
         });
         return primes.filter(p => p.isprime).map(p => p.value);
     }
-    Check(n, iterations) {
+    Check(n, iterations = 0) {
+        if (iterations === 0) {
+            iterations = 2 * n + 1;
+        }
         if (n <= 1 || n === 4) {
             return false;
         }

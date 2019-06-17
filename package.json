@@ -4,6 +4,9 @@
   "description": "Alogirthm for detecting if words are anagram",
   "main": "index.js",
   "scripts": {
+    "build": "npx tsc",
+    "prestart": "npx tsc",
+    "pretest": "npx tsc",
     "start": "node ./out/index.js",
     "test": "ts-mocha -p ./tsconfig.json src/**/*.spec.ts"
   },
@@ -31,6 +34,8 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "expect": "^24.8.0"
+    "@types/lodash": "^4.14.134",
+    "expect": "^24.8.0",
+    "lodash": "^4.17.11"
   }
 }
